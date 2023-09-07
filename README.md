@@ -1,0 +1,1 @@
+# TypeScript Chrome Extension Template

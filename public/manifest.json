@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Extension Name",
+  "version": "1.0",
+  "description": "Extension Description",
+  "permissions": ["scripting", "tabs", "activeTab", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["index.js"]
+    }
+  ]
+}
