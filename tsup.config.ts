@@ -1,13 +1,12 @@
 import dotenv from 'dotenv';
 import { defineConfig } from 'tsup';
-// load node env
 
 dotenv.config();
 
 const NODE_ENV = process.env.NODE_ENV;
 
 export default defineConfig({
-  entryPoints: ['src/index.ts'],
+  entryPoints: ['src/index.ts', 'src/options.ts', 'src/popup.ts'],
   format: ['cjs'],
   dts: NODE_ENV === 'development',
   sourcemap: NODE_ENV === 'development',
