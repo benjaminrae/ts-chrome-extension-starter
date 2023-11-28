@@ -10,6 +10,9 @@
       "js": ["index.js"]
     }
   ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
     "default_popup": "popup.html"
   },

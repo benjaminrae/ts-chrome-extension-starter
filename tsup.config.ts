@@ -6,7 +6,7 @@ dotenv.config();
 const NODE_ENV = process.env.NODE_ENV;
 
 export default defineConfig({
-  entryPoints: ['src/index.ts', 'src/options.ts', 'src/popup.ts'],
+  entryPoints: ['src/index.ts', 'src/options.ts', 'src/popup.ts', 'src/background.ts'],
   format: ['cjs'],
   dts: NODE_ENV === 'development',
   sourcemap: NODE_ENV === 'development',
