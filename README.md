@@ -60,3 +60,7 @@ In the `tsup.config.ts` file, you need to make sure that you configure all of th
 Basically, any file that you need in the final bundle, must be set as an entry point. All of the
 other files, imported by your entry point files, will be tree shaken and bundled.
 
+I have added some placeholder icons, remember to change them. 
+
+You can use this [tool](https://alexleybourne.github.io/chrome-extension-icon-generator/) to create
+the icons you need from a single image.
