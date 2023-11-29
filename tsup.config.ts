@@ -7,7 +7,7 @@ const NODE_ENV = process.env.NODE_ENV;
 
 export default defineConfig({
   entryPoints: ['src/index.ts', 'src/options.ts', 'src/popup.ts', 'src/background.ts'],
-  format: ['cjs'],
+  format: ['esm'],
   dts: NODE_ENV === 'development',
   sourcemap: NODE_ENV === 'development',
   minify: 'terser',
@@ -20,5 +20,4 @@ export default defineConfig({
   splitting: true,
   publicDir: 'public',
   outDir: 'dist',
-  legacyOutput: true,
 });
