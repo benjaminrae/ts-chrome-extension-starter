@@ -12,7 +12,7 @@ pnpm i // or install dependencies which your preferred package manager
 
 ```
 
-To build use 
+To build use: 
 
 ```sh 
 
@@ -20,9 +20,9 @@ pnpm build
 
 ```
 
-This compiled your Typescript and bundles the public folder into dist. 
+This compiles your Typescript and bundles the public folder into dist. 
 
-Use 
+Use: 
 
 ```sh 
 
@@ -64,3 +64,28 @@ I have added some placeholder icons, remember to change them.
 
 You can use this [tool](https://alexleybourne.github.io/chrome-extension-icon-generator/) to create
 the icons you need from a single image.
+
+### Uploading to the browser
+
+The generated `dist` folder is ready to be uploaded to your browser. 
+
+In **Google Chrome** go to *Settings* -> *Manage Extensions* and click *Load unpacked*.
+Choose the `dist` folder and confirm. You should now be able to see the extension in the list of
+your browser extensions. 
+
+### When to reload the extension
+
+| Files changed |	Requires Reload |
+| === | === |
+| manifest.json	| Yes |
+| Background scripts | Yes |
+| Content scripts	| Yes and refresh the page |
+| Popup.html | No |
+| Options.html | No |
+
+To reload the extenion: 
+
+In **Google Chrome** go ddto *Settings* -> *Manage Extensions* and click the reload symbol on your
+extension.
+
+Remember that any changes you make in the source code will need to be bundled. 

@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "build:dev": "tsup --watch"
   },
   "keywords": [],
   "author": "",
