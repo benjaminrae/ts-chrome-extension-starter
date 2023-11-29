@@ -39,7 +39,7 @@ By setting `NODE_ENV` to "production", `console` statements will be removed in t
 
 This template uses **tsup** to to compile TypeScript and bundle the extension
 
-[tsup Docs]https://tsup.egoist.dev/
+[tsup Docs](https://tsup.egoist.dev/)
 
 ### Manifest
 
