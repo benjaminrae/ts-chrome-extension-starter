@@ -76,7 +76,7 @@ your browser extensions.
 ### When to reload the extension
 
 | Files changed |	Requires Reload |
-| === | === |
+| --- | --- |
 | manifest.json	| Yes |
 | Background scripts | Yes |
 | Content scripts	| Yes and refresh the page |
