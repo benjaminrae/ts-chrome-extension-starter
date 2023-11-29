@@ -20,4 +20,5 @@ export default defineConfig({
   splitting: true,
   publicDir: 'public',
   outDir: 'dist',
+  watch: process.argv.includes('--watch'),
 });
